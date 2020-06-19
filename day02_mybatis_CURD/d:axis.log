@@ -404,3 +404,171 @@
 2020-06-19 20:42:49,137 831    [           main] DEBUG ansaction.jdbc.JdbcTransaction  - Resetting autocommit to true on JDBC Connection [com.mysql.jdbc.JDBC4Connection@78b1cc93]
 2020-06-19 20:42:49,138 832    [           main] DEBUG ansaction.jdbc.JdbcTransaction  - Closing JDBC Connection [com.mysql.jdbc.JDBC4Connection@78b1cc93]
 2020-06-19 20:42:49,138 832    [           main] DEBUG source.pooled.PooledDataSource  - Returned connection 2024918163 to pool.
+2020-06-19 20:45:59,143 1      [           main] DEBUG ache.ibatis.logging.LogFactory  - Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+2020-06-19 20:45:59,146 4      [           main] DEBUG       org.apache.ibatis.io.VFS  - Class not found: org.jboss.vfs.VFS
+2020-06-19 20:45:59,146 4      [           main] DEBUG org.apache.ibatis.io.JBoss6VFS  - JBoss 6 VFS API is not available in this environment.
+2020-06-19 20:45:59,146 4      [           main] DEBUG       org.apache.ibatis.io.VFS  - Class not found: org.jboss.vfs.VirtualFile
+2020-06-19 20:45:59,146 4      [           main] DEBUG       org.apache.ibatis.io.VFS  - VFS implementation org.apache.ibatis.io.JBoss6VFS is not valid in this environment.
+2020-06-19 20:45:59,147 5      [           main] DEBUG       org.apache.ibatis.io.VFS  - Using VFS adapter org.apache.ibatis.io.DefaultVFS
+2020-06-19 20:45:59,147 5      [           main] DEBUG rg.apache.ibatis.io.DefaultVFS  - Find JAR URL: file:/Users/chengcheng/Desktop/github/java/myBatis/day02_mybatis_CURD/target/classes/com/cc/domain
+2020-06-19 20:45:59,147 5      [           main] DEBUG rg.apache.ibatis.io.DefaultVFS  - Not a JAR: file:/Users/chengcheng/Desktop/github/java/myBatis/day02_mybatis_CURD/target/classes/com/cc/domain
+2020-06-19 20:45:59,174 32     [           main] DEBUG rg.apache.ibatis.io.DefaultVFS  - Reader entry: QueryVo.class
+2020-06-19 20:45:59,174 32     [           main] DEBUG rg.apache.ibatis.io.DefaultVFS  - Reader entry: User.class
+2020-06-19 20:45:59,174 32     [           main] DEBUG rg.apache.ibatis.io.DefaultVFS  - Listing file:/Users/chengcheng/Desktop/github/java/myBatis/day02_mybatis_CURD/target/classes/com/cc/domain
+2020-06-19 20:45:59,175 33     [           main] DEBUG rg.apache.ibatis.io.DefaultVFS  - Find JAR URL: file:/Users/chengcheng/Desktop/github/java/myBatis/day02_mybatis_CURD/target/classes/com/cc/domain/QueryVo.class
+2020-06-19 20:45:59,175 33     [           main] DEBUG rg.apache.ibatis.io.DefaultVFS  - Not a JAR: file:/Users/chengcheng/Desktop/github/java/myBatis/day02_mybatis_CURD/target/classes/com/cc/domain/QueryVo.class
+2020-06-19 20:45:59,175 33     [           main] DEBUG rg.apache.ibatis.io.DefaultVFS  - Reader entry: ����   1 
+2020-06-19 20:45:59,175 33     [           main] DEBUG rg.apache.ibatis.io.DefaultVFS  - Find JAR URL: file:/Users/chengcheng/Desktop/github/java/myBatis/day02_mybatis_CURD/target/classes/com/cc/domain/User.class
+2020-06-19 20:45:59,176 34     [           main] DEBUG rg.apache.ibatis.io.DefaultVFS  - Not a JAR: file:/Users/chengcheng/Desktop/github/java/myBatis/day02_mybatis_CURD/target/classes/com/cc/domain/User.class
+2020-06-19 20:45:59,176 34     [           main] DEBUG rg.apache.ibatis.io.DefaultVFS  - Reader entry: ����   1 O
+2020-06-19 20:45:59,176 34     [           main] DEBUG .apache.ibatis.io.ResolverUtil  - Checking to see if class com.cc.domain.QueryVo matches criteria [is assignable to Object]
+2020-06-19 20:45:59,177 35     [           main] DEBUG .apache.ibatis.io.ResolverUtil  - Checking to see if class com.cc.domain.User matches criteria [is assignable to Object]
+2020-06-19 20:45:59,209 67     [           main] DEBUG source.pooled.PooledDataSource  - PooledDataSource forcefully closed/removed all connections.
+2020-06-19 20:45:59,210 68     [           main] DEBUG source.pooled.PooledDataSource  - PooledDataSource forcefully closed/removed all connections.
+2020-06-19 20:45:59,210 68     [           main] DEBUG source.pooled.PooledDataSource  - PooledDataSource forcefully closed/removed all connections.
+2020-06-19 20:45:59,210 68     [           main] DEBUG source.pooled.PooledDataSource  - PooledDataSource forcefully closed/removed all connections.
+2020-06-19 20:45:59,212 70     [           main] DEBUG rg.apache.ibatis.io.DefaultVFS  - Find JAR URL: file:/Users/chengcheng/Desktop/github/java/myBatis/day02_mybatis_CURD/target/classes/com/cc/dao
+2020-06-19 20:45:59,212 70     [           main] DEBUG rg.apache.ibatis.io.DefaultVFS  - Not a JAR: file:/Users/chengcheng/Desktop/github/java/myBatis/day02_mybatis_CURD/target/classes/com/cc/dao
+2020-06-19 20:45:59,212 70     [           main] DEBUG rg.apache.ibatis.io.DefaultVFS  - Reader entry: IUserDao.class
+2020-06-19 20:45:59,212 70     [           main] DEBUG rg.apache.ibatis.io.DefaultVFS  - Reader entry: IUserDao.xml
+2020-06-19 20:45:59,213 71     [           main] DEBUG rg.apache.ibatis.io.DefaultVFS  - Listing file:/Users/chengcheng/Desktop/github/java/myBatis/day02_mybatis_CURD/target/classes/com/cc/dao
+2020-06-19 20:45:59,213 71     [           main] DEBUG rg.apache.ibatis.io.DefaultVFS  - Find JAR URL: file:/Users/chengcheng/Desktop/github/java/myBatis/day02_mybatis_CURD/target/classes/com/cc/dao/IUserDao.class
+2020-06-19 20:45:59,213 71     [           main] DEBUG rg.apache.ibatis.io.DefaultVFS  - Not a JAR: file:/Users/chengcheng/Desktop/github/java/myBatis/day02_mybatis_CURD/target/classes/com/cc/dao/IUserDao.class
+2020-06-19 20:45:59,213 71     [           main] DEBUG rg.apache.ibatis.io.DefaultVFS  - Reader entry: ����   1    findAll ()Ljava/util/List; 	Signature (()Ljava/util/List<Lcom/cc/domain/User;>; saveUser (Lcom/cc/domain/User;)V 
+2020-06-19 20:45:59,213 71     [           main] DEBUG rg.apache.ibatis.io.DefaultVFS  - Find JAR URL: file:/Users/chengcheng/Desktop/github/java/myBatis/day02_mybatis_CURD/target/classes/com/cc/dao/IUserDao.xml
+2020-06-19 20:45:59,213 71     [           main] DEBUG rg.apache.ibatis.io.DefaultVFS  - Not a JAR: file:/Users/chengcheng/Desktop/github/java/myBatis/day02_mybatis_CURD/target/classes/com/cc/dao/IUserDao.xml
+2020-06-19 20:45:59,214 72     [           main] DEBUG rg.apache.ibatis.io.DefaultVFS  - Reader entry: <?xml version="1.0" encoding="UTF-8"?>
+2020-06-19 20:45:59,214 72     [           main] DEBUG .apache.ibatis.io.ResolverUtil  - Checking to see if class com.cc.dao.IUserDao matches criteria [is assignable to Object]
+2020-06-19 20:45:59,300 158    [           main] DEBUG ansaction.jdbc.JdbcTransaction  - Opening JDBC Connection
+2020-06-19 20:45:59,707 565    [           main] DEBUG source.pooled.PooledDataSource  - Created connection 2024918163.
+2020-06-19 20:45:59,707 565    [           main] DEBUG ansaction.jdbc.JdbcTransaction  - Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@78b1cc93]
+2020-06-19 20:45:59,711 569    [           main] DEBUG    com.cc.dao.IUserDao.findAll  - ==>  Preparing: select * from user;
+2020-06-19 20:45:59,734 592    [           main] DEBUG    com.cc.dao.IUserDao.findAll  - ==> Parameters: 
+2020-06-19 20:45:59,751 609    [           main] DEBUG    com.cc.dao.IUserDao.findAll  - <==      Total: 8
+2020-06-19 20:45:59,752 610    [           main] DEBUG ansaction.jdbc.JdbcTransaction  - Resetting autocommit to true on JDBC Connection [com.mysql.jdbc.JDBC4Connection@78b1cc93]
+2020-06-19 20:45:59,753 611    [           main] DEBUG ansaction.jdbc.JdbcTransaction  - Closing JDBC Connection [com.mysql.jdbc.JDBC4Connection@78b1cc93]
+2020-06-19 20:45:59,753 611    [           main] DEBUG source.pooled.PooledDataSource  - Returned connection 2024918163 to pool.
+2020-06-19 20:50:49,322 0      [           main] DEBUG ache.ibatis.logging.LogFactory  - Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+2020-06-19 20:50:49,328 6      [           main] DEBUG       org.apache.ibatis.io.VFS  - Class not found: org.jboss.vfs.VFS
+2020-06-19 20:50:49,328 6      [           main] DEBUG org.apache.ibatis.io.JBoss6VFS  - JBoss 6 VFS API is not available in this environment.
+2020-06-19 20:50:49,328 6      [           main] DEBUG       org.apache.ibatis.io.VFS  - Class not found: org.jboss.vfs.VirtualFile
+2020-06-19 20:50:49,329 7      [           main] DEBUG       org.apache.ibatis.io.VFS  - VFS implementation org.apache.ibatis.io.JBoss6VFS is not valid in this environment.
+2020-06-19 20:50:49,329 7      [           main] DEBUG       org.apache.ibatis.io.VFS  - Using VFS adapter org.apache.ibatis.io.DefaultVFS
+2020-06-19 20:50:49,330 8      [           main] DEBUG rg.apache.ibatis.io.DefaultVFS  - Find JAR URL: file:/Users/chengcheng/Desktop/github/java/myBatis/day02_mybatis_CURD/target/classes/com/cc/domain
+2020-06-19 20:50:49,330 8      [           main] DEBUG rg.apache.ibatis.io.DefaultVFS  - Not a JAR: file:/Users/chengcheng/Desktop/github/java/myBatis/day02_mybatis_CURD/target/classes/com/cc/domain
+2020-06-19 20:50:49,364 42     [           main] DEBUG rg.apache.ibatis.io.DefaultVFS  - Reader entry: QueryVo.class
+2020-06-19 20:50:49,365 43     [           main] DEBUG rg.apache.ibatis.io.DefaultVFS  - Reader entry: User.class
+2020-06-19 20:50:49,365 43     [           main] DEBUG rg.apache.ibatis.io.DefaultVFS  - Listing file:/Users/chengcheng/Desktop/github/java/myBatis/day02_mybatis_CURD/target/classes/com/cc/domain
+2020-06-19 20:50:49,365 43     [           main] DEBUG rg.apache.ibatis.io.DefaultVFS  - Find JAR URL: file:/Users/chengcheng/Desktop/github/java/myBatis/day02_mybatis_CURD/target/classes/com/cc/domain/QueryVo.class
+2020-06-19 20:50:49,365 43     [           main] DEBUG rg.apache.ibatis.io.DefaultVFS  - Not a JAR: file:/Users/chengcheng/Desktop/github/java/myBatis/day02_mybatis_CURD/target/classes/com/cc/domain/QueryVo.class
+2020-06-19 20:50:49,366 44     [           main] DEBUG rg.apache.ibatis.io.DefaultVFS  - Reader entry: ����   1 
+2020-06-19 20:50:49,366 44     [           main] DEBUG rg.apache.ibatis.io.DefaultVFS  - Find JAR URL: file:/Users/chengcheng/Desktop/github/java/myBatis/day02_mybatis_CURD/target/classes/com/cc/domain/User.class
+2020-06-19 20:50:49,366 44     [           main] DEBUG rg.apache.ibatis.io.DefaultVFS  - Not a JAR: file:/Users/chengcheng/Desktop/github/java/myBatis/day02_mybatis_CURD/target/classes/com/cc/domain/User.class
+2020-06-19 20:50:49,367 45     [           main] DEBUG rg.apache.ibatis.io.DefaultVFS  - Reader entry: ����   1 O
+2020-06-19 20:50:49,367 45     [           main] DEBUG .apache.ibatis.io.ResolverUtil  - Checking to see if class com.cc.domain.QueryVo matches criteria [is assignable to Object]
+2020-06-19 20:50:49,368 46     [           main] DEBUG .apache.ibatis.io.ResolverUtil  - Checking to see if class com.cc.domain.User matches criteria [is assignable to Object]
+2020-06-19 20:50:49,407 85     [           main] DEBUG source.pooled.PooledDataSource  - PooledDataSource forcefully closed/removed all connections.
+2020-06-19 20:50:49,407 85     [           main] DEBUG source.pooled.PooledDataSource  - PooledDataSource forcefully closed/removed all connections.
+2020-06-19 20:50:49,407 85     [           main] DEBUG source.pooled.PooledDataSource  - PooledDataSource forcefully closed/removed all connections.
+2020-06-19 20:50:49,407 85     [           main] DEBUG source.pooled.PooledDataSource  - PooledDataSource forcefully closed/removed all connections.
+2020-06-19 20:50:49,410 88     [           main] DEBUG rg.apache.ibatis.io.DefaultVFS  - Find JAR URL: file:/Users/chengcheng/Desktop/github/java/myBatis/day02_mybatis_CURD/target/classes/com/cc/dao
+2020-06-19 20:50:49,410 88     [           main] DEBUG rg.apache.ibatis.io.DefaultVFS  - Not a JAR: file:/Users/chengcheng/Desktop/github/java/myBatis/day02_mybatis_CURD/target/classes/com/cc/dao
+2020-06-19 20:50:49,410 88     [           main] DEBUG rg.apache.ibatis.io.DefaultVFS  - Reader entry: IUserDao.class
+2020-06-19 20:50:49,410 88     [           main] DEBUG rg.apache.ibatis.io.DefaultVFS  - Reader entry: IUserDao.xml
+2020-06-19 20:50:49,411 89     [           main] DEBUG rg.apache.ibatis.io.DefaultVFS  - Listing file:/Users/chengcheng/Desktop/github/java/myBatis/day02_mybatis_CURD/target/classes/com/cc/dao
+2020-06-19 20:50:49,411 89     [           main] DEBUG rg.apache.ibatis.io.DefaultVFS  - Find JAR URL: file:/Users/chengcheng/Desktop/github/java/myBatis/day02_mybatis_CURD/target/classes/com/cc/dao/IUserDao.class
+2020-06-19 20:50:49,411 89     [           main] DEBUG rg.apache.ibatis.io.DefaultVFS  - Not a JAR: file:/Users/chengcheng/Desktop/github/java/myBatis/day02_mybatis_CURD/target/classes/com/cc/dao/IUserDao.class
+2020-06-19 20:50:49,411 89     [           main] DEBUG rg.apache.ibatis.io.DefaultVFS  - Reader entry: ����   1    findAll ()Ljava/util/List; 	Signature (()Ljava/util/List<Lcom/cc/domain/User;>; saveUser (Lcom/cc/domain/User;)V 
+2020-06-19 20:50:49,411 89     [           main] DEBUG rg.apache.ibatis.io.DefaultVFS  - Find JAR URL: file:/Users/chengcheng/Desktop/github/java/myBatis/day02_mybatis_CURD/target/classes/com/cc/dao/IUserDao.xml
+2020-06-19 20:50:49,411 89     [           main] DEBUG rg.apache.ibatis.io.DefaultVFS  - Not a JAR: file:/Users/chengcheng/Desktop/github/java/myBatis/day02_mybatis_CURD/target/classes/com/cc/dao/IUserDao.xml
+2020-06-19 20:50:49,412 90     [           main] DEBUG rg.apache.ibatis.io.DefaultVFS  - Reader entry: <?xml version="1.0" encoding="UTF-8"?>
+2020-06-19 20:50:49,412 90     [           main] DEBUG .apache.ibatis.io.ResolverUtil  - Checking to see if class com.cc.dao.IUserDao matches criteria [is assignable to Object]
+2020-06-19 20:50:49,518 196    [           main] DEBUG ansaction.jdbc.JdbcTransaction  - Opening JDBC Connection
+2020-06-19 20:51:16,079 0      [           main] DEBUG ache.ibatis.logging.LogFactory  - Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+2020-06-19 20:51:16,083 4      [           main] DEBUG       org.apache.ibatis.io.VFS  - Class not found: org.jboss.vfs.VFS
+2020-06-19 20:51:16,083 4      [           main] DEBUG org.apache.ibatis.io.JBoss6VFS  - JBoss 6 VFS API is not available in this environment.
+2020-06-19 20:51:16,084 5      [           main] DEBUG       org.apache.ibatis.io.VFS  - Class not found: org.jboss.vfs.VirtualFile
+2020-06-19 20:51:16,085 6      [           main] DEBUG       org.apache.ibatis.io.VFS  - VFS implementation org.apache.ibatis.io.JBoss6VFS is not valid in this environment.
+2020-06-19 20:51:16,085 6      [           main] DEBUG       org.apache.ibatis.io.VFS  - Using VFS adapter org.apache.ibatis.io.DefaultVFS
+2020-06-19 20:51:16,086 7      [           main] DEBUG rg.apache.ibatis.io.DefaultVFS  - Find JAR URL: file:/Users/chengcheng/Desktop/github/java/myBatis/day02_mybatis_CURD/target/classes/com/cc/domain
+2020-06-19 20:51:16,086 7      [           main] DEBUG rg.apache.ibatis.io.DefaultVFS  - Not a JAR: file:/Users/chengcheng/Desktop/github/java/myBatis/day02_mybatis_CURD/target/classes/com/cc/domain
+2020-06-19 20:51:16,127 48     [           main] DEBUG rg.apache.ibatis.io.DefaultVFS  - Reader entry: QueryVo.class
+2020-06-19 20:51:16,127 48     [           main] DEBUG rg.apache.ibatis.io.DefaultVFS  - Reader entry: User.class
+2020-06-19 20:51:16,127 48     [           main] DEBUG rg.apache.ibatis.io.DefaultVFS  - Listing file:/Users/chengcheng/Desktop/github/java/myBatis/day02_mybatis_CURD/target/classes/com/cc/domain
+2020-06-19 20:51:16,127 48     [           main] DEBUG rg.apache.ibatis.io.DefaultVFS  - Find JAR URL: file:/Users/chengcheng/Desktop/github/java/myBatis/day02_mybatis_CURD/target/classes/com/cc/domain/QueryVo.class
+2020-06-19 20:51:16,128 49     [           main] DEBUG rg.apache.ibatis.io.DefaultVFS  - Not a JAR: file:/Users/chengcheng/Desktop/github/java/myBatis/day02_mybatis_CURD/target/classes/com/cc/domain/QueryVo.class
+2020-06-19 20:51:16,128 49     [           main] DEBUG rg.apache.ibatis.io.DefaultVFS  - Reader entry: ����   1 
+2020-06-19 20:51:16,129 50     [           main] DEBUG rg.apache.ibatis.io.DefaultVFS  - Find JAR URL: file:/Users/chengcheng/Desktop/github/java/myBatis/day02_mybatis_CURD/target/classes/com/cc/domain/User.class
+2020-06-19 20:51:16,129 50     [           main] DEBUG rg.apache.ibatis.io.DefaultVFS  - Not a JAR: file:/Users/chengcheng/Desktop/github/java/myBatis/day02_mybatis_CURD/target/classes/com/cc/domain/User.class
+2020-06-19 20:51:16,129 50     [           main] DEBUG rg.apache.ibatis.io.DefaultVFS  - Reader entry: ����   1 O
+2020-06-19 20:51:16,130 51     [           main] DEBUG .apache.ibatis.io.ResolverUtil  - Checking to see if class com.cc.domain.QueryVo matches criteria [is assignable to Object]
+2020-06-19 20:51:16,130 51     [           main] DEBUG .apache.ibatis.io.ResolverUtil  - Checking to see if class com.cc.domain.User matches criteria [is assignable to Object]
+2020-06-19 20:51:16,174 95     [           main] DEBUG source.pooled.PooledDataSource  - PooledDataSource forcefully closed/removed all connections.
+2020-06-19 20:51:16,174 95     [           main] DEBUG source.pooled.PooledDataSource  - PooledDataSource forcefully closed/removed all connections.
+2020-06-19 20:51:16,174 95     [           main] DEBUG source.pooled.PooledDataSource  - PooledDataSource forcefully closed/removed all connections.
+2020-06-19 20:51:16,175 96     [           main] DEBUG source.pooled.PooledDataSource  - PooledDataSource forcefully closed/removed all connections.
+2020-06-19 20:51:16,177 98     [           main] DEBUG rg.apache.ibatis.io.DefaultVFS  - Find JAR URL: file:/Users/chengcheng/Desktop/github/java/myBatis/day02_mybatis_CURD/target/classes/com/cc/dao
+2020-06-19 20:51:16,177 98     [           main] DEBUG rg.apache.ibatis.io.DefaultVFS  - Not a JAR: file:/Users/chengcheng/Desktop/github/java/myBatis/day02_mybatis_CURD/target/classes/com/cc/dao
+2020-06-19 20:51:16,178 99     [           main] DEBUG rg.apache.ibatis.io.DefaultVFS  - Reader entry: IUserDao.class
+2020-06-19 20:51:16,178 99     [           main] DEBUG rg.apache.ibatis.io.DefaultVFS  - Reader entry: IUserDao.xml
+2020-06-19 20:51:16,178 99     [           main] DEBUG rg.apache.ibatis.io.DefaultVFS  - Listing file:/Users/chengcheng/Desktop/github/java/myBatis/day02_mybatis_CURD/target/classes/com/cc/dao
+2020-06-19 20:51:16,178 99     [           main] DEBUG rg.apache.ibatis.io.DefaultVFS  - Find JAR URL: file:/Users/chengcheng/Desktop/github/java/myBatis/day02_mybatis_CURD/target/classes/com/cc/dao/IUserDao.class
+2020-06-19 20:51:16,178 99     [           main] DEBUG rg.apache.ibatis.io.DefaultVFS  - Not a JAR: file:/Users/chengcheng/Desktop/github/java/myBatis/day02_mybatis_CURD/target/classes/com/cc/dao/IUserDao.class
+2020-06-19 20:51:16,178 99     [           main] DEBUG rg.apache.ibatis.io.DefaultVFS  - Reader entry: ����   1    findAll ()Ljava/util/List; 	Signature (()Ljava/util/List<Lcom/cc/domain/User;>; saveUser (Lcom/cc/domain/User;)V 
+2020-06-19 20:51:16,178 99     [           main] DEBUG rg.apache.ibatis.io.DefaultVFS  - Find JAR URL: file:/Users/chengcheng/Desktop/github/java/myBatis/day02_mybatis_CURD/target/classes/com/cc/dao/IUserDao.xml
+2020-06-19 20:51:16,179 100    [           main] DEBUG rg.apache.ibatis.io.DefaultVFS  - Not a JAR: file:/Users/chengcheng/Desktop/github/java/myBatis/day02_mybatis_CURD/target/classes/com/cc/dao/IUserDao.xml
+2020-06-19 20:51:16,179 100    [           main] DEBUG rg.apache.ibatis.io.DefaultVFS  - Reader entry: <?xml version="1.0" encoding="UTF-8"?>
+2020-06-19 20:51:16,179 100    [           main] DEBUG .apache.ibatis.io.ResolverUtil  - Checking to see if class com.cc.dao.IUserDao matches criteria [is assignable to Object]
+2020-06-19 20:51:16,295 216    [           main] DEBUG ansaction.jdbc.JdbcTransaction  - Opening JDBC Connection
+2020-06-19 20:51:16,798 719    [           main] DEBUG source.pooled.PooledDataSource  - Created connection 107241811.
+2020-06-19 20:51:16,798 719    [           main] DEBUG ansaction.jdbc.JdbcTransaction  - Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@6646153]
+2020-06-19 20:51:16,803 724    [           main] DEBUG    com.cc.dao.IUserDao.findAll  - ==>  Preparing: select * from user;
+2020-06-19 20:51:16,827 748    [           main] DEBUG    com.cc.dao.IUserDao.findAll  - ==> Parameters: 
+2020-06-19 20:51:16,842 763    [           main] DEBUG    com.cc.dao.IUserDao.findAll  - <==      Total: 8
+2020-06-19 20:51:16,843 764    [           main] DEBUG ansaction.jdbc.JdbcTransaction  - Resetting autocommit to true on JDBC Connection [com.mysql.jdbc.JDBC4Connection@6646153]
+2020-06-19 20:51:16,843 764    [           main] DEBUG ansaction.jdbc.JdbcTransaction  - Closing JDBC Connection [com.mysql.jdbc.JDBC4Connection@6646153]
+2020-06-19 20:51:16,843 764    [           main] DEBUG source.pooled.PooledDataSource  - Returned connection 107241811 to pool.
+2020-06-19 20:54:38,974 0      [           main] DEBUG ache.ibatis.logging.LogFactory  - Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+2020-06-19 20:54:38,978 4      [           main] DEBUG       org.apache.ibatis.io.VFS  - Class not found: org.jboss.vfs.VFS
+2020-06-19 20:54:38,979 5      [           main] DEBUG org.apache.ibatis.io.JBoss6VFS  - JBoss 6 VFS API is not available in this environment.
+2020-06-19 20:54:38,979 5      [           main] DEBUG       org.apache.ibatis.io.VFS  - Class not found: org.jboss.vfs.VirtualFile
+2020-06-19 20:54:38,980 6      [           main] DEBUG       org.apache.ibatis.io.VFS  - VFS implementation org.apache.ibatis.io.JBoss6VFS is not valid in this environment.
+2020-06-19 20:54:38,980 6      [           main] DEBUG       org.apache.ibatis.io.VFS  - Using VFS adapter org.apache.ibatis.io.DefaultVFS
+2020-06-19 20:54:38,981 7      [           main] DEBUG rg.apache.ibatis.io.DefaultVFS  - Find JAR URL: file:/Users/chengcheng/Desktop/github/java/myBatis/day02_mybatis_CURD/target/classes/com/cc/domain
+2020-06-19 20:54:38,981 7      [           main] DEBUG rg.apache.ibatis.io.DefaultVFS  - Not a JAR: file:/Users/chengcheng/Desktop/github/java/myBatis/day02_mybatis_CURD/target/classes/com/cc/domain
+2020-06-19 20:54:39,010 36     [           main] DEBUG rg.apache.ibatis.io.DefaultVFS  - Reader entry: QueryVo.class
+2020-06-19 20:54:39,010 36     [           main] DEBUG rg.apache.ibatis.io.DefaultVFS  - Reader entry: User.class
+2020-06-19 20:54:39,011 37     [           main] DEBUG rg.apache.ibatis.io.DefaultVFS  - Listing file:/Users/chengcheng/Desktop/github/java/myBatis/day02_mybatis_CURD/target/classes/com/cc/domain
+2020-06-19 20:54:39,011 37     [           main] DEBUG rg.apache.ibatis.io.DefaultVFS  - Find JAR URL: file:/Users/chengcheng/Desktop/github/java/myBatis/day02_mybatis_CURD/target/classes/com/cc/domain/QueryVo.class
+2020-06-19 20:54:39,011 37     [           main] DEBUG rg.apache.ibatis.io.DefaultVFS  - Not a JAR: file:/Users/chengcheng/Desktop/github/java/myBatis/day02_mybatis_CURD/target/classes/com/cc/domain/QueryVo.class
+2020-06-19 20:54:39,012 38     [           main] DEBUG rg.apache.ibatis.io.DefaultVFS  - Reader entry: ����   1 
+2020-06-19 20:54:39,012 38     [           main] DEBUG rg.apache.ibatis.io.DefaultVFS  - Find JAR URL: file:/Users/chengcheng/Desktop/github/java/myBatis/day02_mybatis_CURD/target/classes/com/cc/domain/User.class
+2020-06-19 20:54:39,012 38     [           main] DEBUG rg.apache.ibatis.io.DefaultVFS  - Not a JAR: file:/Users/chengcheng/Desktop/github/java/myBatis/day02_mybatis_CURD/target/classes/com/cc/domain/User.class
+2020-06-19 20:54:39,013 39     [           main] DEBUG rg.apache.ibatis.io.DefaultVFS  - Reader entry: ����   1 O
+2020-06-19 20:54:39,013 39     [           main] DEBUG .apache.ibatis.io.ResolverUtil  - Checking to see if class com.cc.domain.QueryVo matches criteria [is assignable to Object]
+2020-06-19 20:54:39,013 39     [           main] DEBUG .apache.ibatis.io.ResolverUtil  - Checking to see if class com.cc.domain.User matches criteria [is assignable to Object]
+2020-06-19 20:54:39,049 75     [           main] DEBUG source.pooled.PooledDataSource  - PooledDataSource forcefully closed/removed all connections.
+2020-06-19 20:54:39,049 75     [           main] DEBUG source.pooled.PooledDataSource  - PooledDataSource forcefully closed/removed all connections.
+2020-06-19 20:54:39,049 75     [           main] DEBUG source.pooled.PooledDataSource  - PooledDataSource forcefully closed/removed all connections.
+2020-06-19 20:54:39,049 75     [           main] DEBUG source.pooled.PooledDataSource  - PooledDataSource forcefully closed/removed all connections.
+2020-06-19 20:54:39,052 78     [           main] DEBUG rg.apache.ibatis.io.DefaultVFS  - Find JAR URL: file:/Users/chengcheng/Desktop/github/java/myBatis/day02_mybatis_CURD/target/classes/com/cc/dao
+2020-06-19 20:54:39,052 78     [           main] DEBUG rg.apache.ibatis.io.DefaultVFS  - Not a JAR: file:/Users/chengcheng/Desktop/github/java/myBatis/day02_mybatis_CURD/target/classes/com/cc/dao
+2020-06-19 20:54:39,052 78     [           main] DEBUG rg.apache.ibatis.io.DefaultVFS  - Reader entry: IUserDao.class
+2020-06-19 20:54:39,052 78     [           main] DEBUG rg.apache.ibatis.io.DefaultVFS  - Reader entry: IUserDao.xml
+2020-06-19 20:54:39,052 78     [           main] DEBUG rg.apache.ibatis.io.DefaultVFS  - Listing file:/Users/chengcheng/Desktop/github/java/myBatis/day02_mybatis_CURD/target/classes/com/cc/dao
+2020-06-19 20:54:39,053 79     [           main] DEBUG rg.apache.ibatis.io.DefaultVFS  - Find JAR URL: file:/Users/chengcheng/Desktop/github/java/myBatis/day02_mybatis_CURD/target/classes/com/cc/dao/IUserDao.class
+2020-06-19 20:54:39,053 79     [           main] DEBUG rg.apache.ibatis.io.DefaultVFS  - Not a JAR: file:/Users/chengcheng/Desktop/github/java/myBatis/day02_mybatis_CURD/target/classes/com/cc/dao/IUserDao.class
+2020-06-19 20:54:39,053 79     [           main] DEBUG rg.apache.ibatis.io.DefaultVFS  - Reader entry: ����   1    findAll ()Ljava/util/List; 	Signature (()Ljava/util/List<Lcom/cc/domain/User;>; saveUser (Lcom/cc/domain/User;)V 
+2020-06-19 20:54:39,053 79     [           main] DEBUG rg.apache.ibatis.io.DefaultVFS  - Find JAR URL: file:/Users/chengcheng/Desktop/github/java/myBatis/day02_mybatis_CURD/target/classes/com/cc/dao/IUserDao.xml
+2020-06-19 20:54:39,053 79     [           main] DEBUG rg.apache.ibatis.io.DefaultVFS  - Not a JAR: file:/Users/chengcheng/Desktop/github/java/myBatis/day02_mybatis_CURD/target/classes/com/cc/dao/IUserDao.xml
+2020-06-19 20:54:39,054 80     [           main] DEBUG rg.apache.ibatis.io.DefaultVFS  - Reader entry: <?xml version="1.0" encoding="UTF-8"?>
+2020-06-19 20:54:39,054 80     [           main] DEBUG .apache.ibatis.io.ResolverUtil  - Checking to see if class com.cc.dao.IUserDao matches criteria [is assignable to Object]
+2020-06-19 20:54:39,155 181    [           main] DEBUG ansaction.jdbc.JdbcTransaction  - Opening JDBC Connection
+2020-06-19 20:54:39,572 598    [           main] DEBUG source.pooled.PooledDataSource  - Created connection 107241811.
+2020-06-19 20:54:39,573 599    [           main] DEBUG ansaction.jdbc.JdbcTransaction  - Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@6646153]
+2020-06-19 20:54:39,576 602    [           main] DEBUG    com.cc.dao.IUserDao.findAll  - ==>  Preparing: select * from user;
+2020-06-19 20:54:39,596 622    [           main] DEBUG    com.cc.dao.IUserDao.findAll  - ==> Parameters: 
+2020-06-19 20:54:39,607 633    [           main] DEBUG    com.cc.dao.IUserDao.findAll  - <==      Total: 8
+2020-06-19 20:54:39,608 634    [           main] DEBUG ansaction.jdbc.JdbcTransaction  - Resetting autocommit to true on JDBC Connection [com.mysql.jdbc.JDBC4Connection@6646153]
+2020-06-19 20:54:39,608 634    [           main] DEBUG ansaction.jdbc.JdbcTransaction  - Closing JDBC Connection [com.mysql.jdbc.JDBC4Connection@6646153]
+2020-06-19 20:54:39,608 634    [           main] DEBUG source.pooled.PooledDataSource  - Returned connection 107241811 to pool.

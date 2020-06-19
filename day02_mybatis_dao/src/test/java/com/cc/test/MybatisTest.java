@@ -76,7 +76,7 @@ public class MybatisTest {
     @Test
     public void testUpdateUser() {
         User user = new User();
-        user.setId(50);
+        user.setId(54);
         user.setSex("女");
         user.setAddress("北京市");
         user.setUsername("mary");
@@ -92,7 +92,7 @@ public class MybatisTest {
     @Test
     public void testDeleteUser() {
         //5、执行保存方法
-        userDao.deleteUser(48);
+        userDao.deleteUser(54);
     }
 
     /**
@@ -101,7 +101,7 @@ public class MybatisTest {
     @Test
     public void testFindById() {
         //5、执行保存方法
-        User user = userDao.findById(50);
+        User user = userDao.findById(53);
         System.out.println(user);
     }
 

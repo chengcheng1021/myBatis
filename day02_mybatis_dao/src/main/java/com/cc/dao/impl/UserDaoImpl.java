@@ -52,7 +52,14 @@ public class UserDaoImpl implements IUserDao {
      * @param user
      */
     public void updateUser(User user) {
-
+        //1、根据 factory 获取 SqlSession 对象
+        SqlSession session = factory.openSession();
+        //2、调用方法实现更新
+        session.update("com.cc.dao.IUserDao.updateUser", user);
+        //3、提交事务
+        session.commit();
+        //4、释放资源
+        session.close();
     }
 
     /**
@@ -61,7 +68,14 @@ public class UserDaoImpl implements IUserDao {
      * @param userId
      */
     public void deleteUser(Integer userId) {
-
+        //1、根据 factory 获取 SqlSession 对象
+        SqlSession session = factory.openSession();
+        //2、调用方法实现删除
+        session.update("com.cc.dao.IUserDao.deleteUser", userId);
+        //3、提交事务
+        session.commit();
+        //4、释放资源
+        session.close();
     }
 
     /**
@@ -71,7 +85,14 @@ public class UserDaoImpl implements IUserDao {
      * @return
      */
     public User findById(Integer userId) {
-        return null;
+        //1、根据 factory 获取 SqlSession 对象
+        SqlSession session = factory.openSession();
+        //2、调用 SqlSession 中的方法，实现查询列表
+        User user = session.selectOne("com.cc.dao.IUserDao.findById", userId);
+        //3、释放资源
+        session.close();
+
+        return user;
     }
 
     /**

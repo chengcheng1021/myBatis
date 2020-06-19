@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="802f6ded-a945-4815-b7d9-9226a8368ec3" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cc/dao/impl/UserDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cc/dao/impl/UserDaoImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/cc/test/MybatisTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/cc/test/MybatisTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/cc/dao/IUserDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/cc/dao/impl/UserDaoImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/cc/domain/User.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/cc/test/MybatisTest.class" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="1dW1TxEA5TsCj6bLaJJCEt2maey" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+  </component>
+  <component name="RunManager" selected="JUnit.MybatisTest.testFindById">
+    <configuration name="MybatisTest.testDeleteUser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="day02_mybatis_dao" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.cc.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.cc.test" />
+      <option name="MAIN_CLASS_NAME" value="com.cc.test.MybatisTest" />
+      <option name="METHOD_NAME" value="testDeleteUser" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MybatisTest.testFindAll" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="day02_mybatis_dao" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.cc.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.cc.test" />
+      <option name="MAIN_CLASS_NAME" value="com.cc.test.MybatisTest" />
+      <option name="METHOD_NAME" value="testFindAll" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MybatisTest.testFindById" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="day02_mybatis_dao" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.cc.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.cc.test" />
+      <option name="MAIN_CLASS_NAME" value="com.cc.test.MybatisTest" />
+      <option name="METHOD_NAME" value="testFindById" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MybatisTest.testSaveUser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="day02_mybatis_dao" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.cc.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.cc.test" />
+      <option name="MAIN_CLASS_NAME" value="com.cc.test.MybatisTest" />
+      <option name="METHOD_NAME" value="testSaveUser" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MybatisTest.testUpdateUser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="day02_mybatis_dao" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.cc.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.cc.test" />
+      <option name="MAIN_CLASS_NAME" value="com.cc.test.MybatisTest" />
+      <option name="METHOD_NAME" value="testUpdateUser" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.MybatisTest.testFindById" />
+        <item itemvalue="JUnit.MybatisTest.testDeleteUser" />
+        <item itemvalue="JUnit.MybatisTest.testUpdateUser" />
+        <item itemvalue="JUnit.MybatisTest.testSaveUser" />
+        <item itemvalue="JUnit.MybatisTest.testFindAll" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="802f6ded-a945-4815-b7d9-9226a8368ec3" name="Default Changelist" comment="" />
+      <created>1592526046530</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1592526046530</updated>
+      <workItem from="1592526050475" duration="422000" />
+      <workItem from="1592526536837" duration="320000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state width="1372" height="236" key="GridCell.Tab.0.bottom" timestamp="1592526517648">
+      <screen x="0" y="23" width="1680" height="954" />
+    </state>
+    <state width="1372" height="236" key="GridCell.Tab.0.bottom/-2480.-1417.3440.1417/0.23.1680.954@0.23.1680.954" timestamp="1592526517648" />
+    <state width="1372" height="236" key="GridCell.Tab.0.center" timestamp="1592526517647">
+      <screen x="0" y="23" width="1680" height="954" />
+    </state>
+    <state width="1372" height="236" key="GridCell.Tab.0.center/-2480.-1417.3440.1417/0.23.1680.954@0.23.1680.954" timestamp="1592526517647" />
+    <state width="1372" height="236" key="GridCell.Tab.0.left" timestamp="1592526517646">
+      <screen x="0" y="23" width="1680" height="954" />
+    </state>
+    <state width="1372" height="236" key="GridCell.Tab.0.left/-2480.-1417.3440.1417/0.23.1680.954@0.23.1680.954" timestamp="1592526517646" />
+    <state width="1372" height="236" key="GridCell.Tab.0.right" timestamp="1592526517647">
+      <screen x="0" y="23" width="1680" height="954" />
+    </state>
+    <state width="1372" height="236" key="GridCell.Tab.0.right/-2480.-1417.3440.1417/0.23.1680.954@0.23.1680.954" timestamp="1592526517647" />
+    <state x="185" y="23" key="SettingsEditor" timestamp="1592526855613">
+      <screen x="0" y="23" width="1680" height="954" />
+    </state>
+    <state x="185" y="23" key="SettingsEditor/-2480.-1417.3440.1417/0.23.1680.954@0.23.1680.954" timestamp="1592526855613" />
+  </component>
+</project>

@@ -3,6 +3,15 @@
         PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-config.dtd">
 <configuration>
+    <!-- 使用 typeAliases 配置别名，它只能配置 domain 中类的别名 -->
+    <typeAliases>
+        <!-- typeAlias 用于配置别名。type属性指定的是实体类全限定类名。alias 属性指定别名，当指定了别名就不再区分大小写 -->
+<!--        <typeAlias type="com.cc.domain.User" alias="user"></typeAlias>-->
+
+        <!-- 用于指定要配置别名的包，当指定后，该包下的实体类都会注册别名，并且类名就是别名，不再区分大小写 -->
+        <package name="com.cc.domain"/>
+    </typeAliases>
+
     <!-- 配置环境 -->
     <environments default="mysql">
         <!-- 配置 mysql 的环境 -->
@@ -20,6 +29,9 @@
     </environments>
     <!-- 配置映射文件位置 -->
     <mappers>
-        <mapper resource="com/cc/dao/IUserDao.xml"></mapper>
+<!--        <mapper resource="com/cc/dao/IUserDao.xml"></mapper>-->
+        <!-- package 标签是用于指定 dao 接口所在的包，
+        当指定了之后就不需要再写 mapper 以及 resource 或者 class 了-->
+        <package name="com.cc.dao"/>
     </mappers>
 </configuration>

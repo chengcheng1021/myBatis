@@ -102,7 +102,14 @@ public class UserDaoImpl implements IUserDao {
      * @return
      */
     public List<User> findByName(String userName) {
-        return null;
+        //1、根据 factory 获取 SqlSession 对象
+        SqlSession session = factory.openSession();
+        //2、调用 SqlSession 中的方法，实现查询列表
+        List<User> users = session.selectList("com.cc.dao.IUserDao.findByName", userName);
+        //3、释放资源
+        session.close();
+
+        return users;
     }
 
     /**
@@ -111,6 +118,13 @@ public class UserDaoImpl implements IUserDao {
      * @return
      */
     public int findTotal() {
-        return 0;
+        //1、根据 factory 获取 SqlSession 对象
+        SqlSession session = factory.openSession();
+        //2、调用 SqlSession 中的方法，实现查询列表
+        Integer total = session.selectOne("com.cc.dao.IUserDao.findTotal");
+        //3、释放资源
+        session.close();
+
+        return total;
     }
 }

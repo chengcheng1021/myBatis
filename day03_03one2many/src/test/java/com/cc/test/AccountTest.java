@@ -3,6 +3,7 @@ package com.cc.test;
 import com.cc.dao.IAccountDao;
 import com.cc.dao.IUserDao;
 import com.cc.domain.Account;
+import com.cc.domain.AccountUser;
 import com.cc.domain.User;
 import org.apache.ibatis.io.Resources;
 import org.apache.ibatis.session.SqlSession;
@@ -55,11 +56,23 @@ public class AccountTest {
      * 测试查询所有
      */
     @Test
-    public void testFindAll() throws IOException {
+    public void testFindAll() {
         //5、执行查询所有方法
         List<Account> accounts = accountDao.findAll();
         for (Account account : accounts) {
             System.out.println(account);
+        }
+    }
+
+    /**
+     * 测试查询所有账户，同时包含用户名称和地址
+     */
+    @Test
+    public void testFindAllAccountUser() {
+        //5、执行查询所有方法
+        List<AccountUser> accountUsers = accountDao.findAllAccount();
+        for (AccountUser accountUser : accountUsers) {
+            System.out.println(accountUser);
         }
     }
 }

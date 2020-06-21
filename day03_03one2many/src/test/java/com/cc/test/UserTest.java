@@ -1,6 +1,9 @@
 package com.cc.test;
 
+import com.cc.dao.IAccountDao;
 import com.cc.dao.IUserDao;
+import com.cc.domain.Account;
+import com.cc.domain.AccountUser;
 import com.cc.domain.User;
 import org.apache.ibatis.io.Resources;
 import org.apache.ibatis.session.SqlSession;
@@ -19,7 +22,7 @@ import java.util.List;
 /**
  * 测试 Mybatis 的 CRUD 操作
  */
-public class MybatisTest {
+public class UserTest {
 
     private InputStream is;
     private SqlSession sqlSession;
@@ -53,21 +56,14 @@ public class MybatisTest {
      * 测试查询所有
      */
     @Test
-    public void testFindAll() throws IOException {
+    public void testFindAll() {
         //5、执行查询所有方法
         List<User> users = userDao.findAll();
         for (User user : users) {
+            System.out.println("--------每个user的信息-------");
             System.out.println(user);
+            System.out.println(user.getAccounts());
         }
     }
 
-    /**
-     * 测试根据id查询用户
-     */
-    @Test
-    public void testFindById() {
-        //5、执行保存方法
-        User user = userDao.findById(50);
-        System.out.println(user);
-    }
 }

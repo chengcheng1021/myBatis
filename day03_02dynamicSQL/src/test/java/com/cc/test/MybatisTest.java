@@ -107,6 +107,7 @@ public class MybatisTest {
     public void testFindByCondition() throws IOException {
         User u = new User();
         u.setUserName("老王");
+        u.setUserSex("女");
 
         //5、执行查询所有方法
         List<User> users = userDao.findUserByCondition(u);

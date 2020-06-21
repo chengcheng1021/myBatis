@@ -15,9 +15,14 @@
         <result property="userSex" column="sex"></result>
     </resultMap>
 
+    <!-- 了解的内容：抽取重复的 sql 语句 -->
+    <sql id="defaultSql">
+        select * from user
+    </sql>
+
     <!-- 查询所有 -->
     <select id="findAll" resultMap="userMap">
-        select * from user;
+        <include refid="defaultSql"></include>
     </select>
 
     <!-- 根据id查询用户-->
@@ -54,6 +59,18 @@
             </if>
             <if test="userSex != null">
                 and sex = #{userSex}
+            </if>
+        </where>
+    </select>
+
+    <!-- 根据 queryvo 中的 Id 集合实现查询用户列表 -->
+    <select id="findUserInIds" resultMap="userMap" parameterType="queryvo">
+        <include refid="defaultSql"></include>
+        <where>
+            <if test="ids != null and ids.size()>0">
+                <foreach collection="ids" open="and id in (" close=")" item="id" separator=",">
+                    #{id}
+                </foreach>
             </if>
         </where>
     </select>

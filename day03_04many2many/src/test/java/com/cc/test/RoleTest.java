@@ -1,6 +1,8 @@
 package com.cc.test;
 
+import com.cc.dao.IRoleDao;
 import com.cc.dao.IUserDao;
+import com.cc.domain.Role;
 import com.cc.domain.User;
 import org.apache.ibatis.io.Resources;
 import org.apache.ibatis.session.SqlSession;
@@ -12,18 +14,16 @@ import org.junit.Test;
 
 import java.io.IOException;
 import java.io.InputStream;
-import java.util.ArrayList;
-import java.util.Date;
 import java.util.List;
 
 /**
  * 测试 Mybatis 的 CRUD 操作
  */
-public class UserTest {
+public class RoleTest {
 
     private InputStream is;
     private SqlSession sqlSession;
-    private IUserDao userDao;
+    private IRoleDao roleDao;
 
     @Before//用于在测试方法之前执行
     public void init() throws IOException {
@@ -37,7 +37,7 @@ public class UserTest {
         sqlSession = factory.openSession();
 
         //4、获取dao的代理对象
-        userDao = sqlSession.getMapper(IUserDao.class);
+        roleDao = sqlSession.getMapper(IRoleDao.class);
     }
 
     @After//用于在测试方法之后执行
@@ -55,10 +55,10 @@ public class UserTest {
     @Test
     public void testFindAll() {
         //5、执行查询所有方法
-        List<User> users = userDao.findAll();
-        for (User user : users) {
-            System.out.println("--------每个user的信息-------");
-            System.out.println(user);
+        List<Role> roles = roleDao.findAll();
+        for (Role role : roles) {
+            System.out.println("--------每个 role 的信息-------");
+            System.out.println(role);
         }
     }
 

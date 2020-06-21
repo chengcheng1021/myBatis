@@ -34,4 +34,12 @@
     <select id="findUserByVo" parameterType="com.cc.domain.QueryVo" resultMap="userMap">
         select * from user where username like #{user.userName}
     </select>
+
+    <!-- 根据条件查询 -->
+    <select id="findUserByCondition" resultMap="userMap" parameterType="user">
+        select * from user where 1=1
+        <if test="userName != null">
+            and username = #{userName}
+        </if>
+    </select>
 </mapper>

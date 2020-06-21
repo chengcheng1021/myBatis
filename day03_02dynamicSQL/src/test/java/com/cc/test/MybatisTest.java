@@ -99,4 +99,19 @@ public class MybatisTest {
             System.out.println(u);
         }
     }
+
+    /**
+     * 测试查询所有
+     */
+    @Test
+    public void testFindByCondition() throws IOException {
+        User u = new User();
+        u.setUserName("老王");
+
+        //5、执行查询所有方法
+        List<User> users = userDao.findUserByCondition(u);
+        for (User user : users) {
+            System.out.println(user);
+        }
+    }
 }

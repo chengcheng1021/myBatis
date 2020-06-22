@@ -21,4 +21,10 @@ public interface IUserDao {
      * @return
      */
     User findById(Integer userId);
+
+    /**
+     * 更新用户信息
+     * @param user
+     */
+    void updateUser(User user);
 }

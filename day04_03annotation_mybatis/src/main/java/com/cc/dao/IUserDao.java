@@ -12,7 +12,7 @@ import java.util.List;
  * @UPDATE
  * @DELETE
  */
-public class IUserDao {
+public interface IUserDao {
 
     /**
      * 查询所有用户

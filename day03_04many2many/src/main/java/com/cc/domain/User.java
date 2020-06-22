@@ -10,6 +10,17 @@ public class User {
     private String sex;
     private String address;
 
+    //多对多的关系映射，一个用户可以具备多个角色
+    private List<Role> roles;
+
+    public List<Role> getRoles() {
+        return roles;
+    }
+
+    public void setRoles(List<Role> roles) {
+        this.roles = roles;
+    }
+
     public int getId() {
         return id;
     }

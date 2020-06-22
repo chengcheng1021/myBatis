@@ -59,6 +59,7 @@ public class RoleTest {
         for (Role role : roles) {
             System.out.println("--------每个 role 的信息-------");
             System.out.println(role);
+            System.out.println(role.getUsers());
         }
     }
 

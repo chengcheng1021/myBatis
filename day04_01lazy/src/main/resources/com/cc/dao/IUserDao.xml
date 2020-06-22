@@ -12,16 +12,13 @@
         <result property="sex" column="sex"></result>
         <result property="address" column="address"></result>
         <!-- 配置 user 对象中 accounts 集合的映射 -->
-        <collection property="accounts" ofType="account">
-            <id column="aid" property="id"></id>
-            <result column="uid" property="uid"></result>
-            <result column="money" property="money"></result>
+        <collection property="accounts" ofType="account" select="com.cc.dao.IAccountDao.findAccountByUid" column="id">
         </collection>
     </resultMap>
 
     <!-- 查询所有 -->
     <select id="findAll" resultMap="userAccountMap">
-        select * from user u left outer join account a on u.id = a.uid
+        select * from user
     </select>
 
     <!-- 根据id查询用户-->

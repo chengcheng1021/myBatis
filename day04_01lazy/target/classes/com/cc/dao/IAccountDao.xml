@@ -13,20 +13,17 @@
             一对一的关系映射，配置封装 user 的内容
             select 属性指定的内容，查询用户的唯一标识：
                 column 属性指定的内容：用户根据 id 查询时，所需要的参数的值
-
          -->
-        <association property="user" column="uid" javaType="user" select="com.cc.dao.IUserDao.findById">
-<!--            <id property="id" column="id"></id>-->
-<!--            <result property="username" column="username"></result>-->
-<!--            <result property="birthday" column="birthday"></result>-->
-<!--            <result property="sex" column="sex"></result>-->
-<!--            <result property="address" column="address"></result>-->
-        </association>
-
+        <association property="user" column="uid" javaType="user" select="com.cc.dao.IUserDao.findById"></association>
     </resultMap>
 
     <!-- 查询所有 -->
     <select id="findAll" resultMap="accountUserMap">
         select * from account;
+    </select>
+
+    <!-- 根据用户ID查询账户信息 -->
+    <select id="findAccountByUid" resultType="account">
+        select * from account where uid = #{uid}
     </select>
 </mapper>

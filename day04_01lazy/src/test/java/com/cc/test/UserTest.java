@@ -58,11 +58,11 @@ public class UserTest {
     public void testFindAll() {
         //5、执行查询所有方法
         List<User> users = userDao.findAll();
-        for (User user : users) {
-            System.out.println("--------每个user的信息-------");
-            System.out.println(user);
-            System.out.println(user.getAccounts());
-        }
+//        for (User user : users) {
+//            System.out.println("--------每个user的信息-------");
+//            System.out.println(user);
+//            System.out.println(user.getAccounts());
+//        }
     }
 
 }

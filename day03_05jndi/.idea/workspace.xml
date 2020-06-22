@@ -2,16 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9540c082-1c2b-4216-b7d5-11be8c62f1ba" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/cc/dao/IUserDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/cc/domain/QueryVo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/cc/domain/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/SqlMapConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/cc/dao/IUserDao.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/jdbcConfig.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/log4j.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/cc/test/MybatisTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/META-INF/context.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/SqlMapConfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/SqlMapConfig.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/SqlMapConfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/SqlMapConfig.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/cc/dao/IUserDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/cc/domain/QueryVo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/cc/domain/User.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/cc/test/MybatisTest.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,13 +30,28 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/webapp/META-INF" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
   </component>
-  <component name="RunManager">
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.cc.test" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/webapp/META-INF" />
+      <recent name="$PROJECT_DIR$/src/main/resources" />
+      <recent name="$PROJECT_DIR$/src/main/java" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.MybatisTest.testFindAll">
     <configuration name="MybatisTest.testFindAll" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="day03_05jndi" />
       <extension name="coverage">
@@ -54,6 +68,154 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Tomcat 9.0.35" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.35" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
+      <option name="UPDATING_POLICY" value="restart-server" />
+      <deployment>
+        <artifact name="day03_05jndi:war">
+          <settings>
+            <option name="CONTEXT_PATH" value="/day03_05jndi" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="Tomcat_9_0_35_day03_05jndi" />
+      </server-settings>
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <predefined_log_file enabled="true" id="Tomcat Catalina" />
+      <predefined_log_file id="Tomcat Manager" />
+      <predefined_log_file id="Tomcat Host Manager" />
+      <predefined_log_file id="Tomcat Localhost Access" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="61189" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="day03_05jndi:war" />
+        </option>
+      </method>
+    </configuration>
+    <configuration default="true" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.35" ALTERNATIVE_JRE_ENABLED="false">
+      <option name="UPDATING_POLICY" value="restart-server" />
+      <deployment>
+        <artifact name="day03_05jndi:war">
+          <settings>
+            <option name="CONTEXT_PATH" value="/day03_05jndi" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="_day03_05jndi" />
+      </server-settings>
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <predefined_log_file enabled="true" id="Tomcat Catalina" />
+      <predefined_log_file id="Tomcat Manager" />
+      <predefined_log_file id="Tomcat Host Manager" />
+      <predefined_log_file id="Tomcat Localhost Access" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="61189" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="day03_05jndi:war" />
+        </option>
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="JUnit.MybatisTest.testFindAll" />
+      <item itemvalue="Tomcat Server.Tomcat 9.0.35" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.MybatisTest.testFindAll" />
@@ -70,7 +232,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1592785399298</updated>
-      <workItem from="1592785403797" duration="632000" />
+      <workItem from="1592785403797" duration="4818000" />
     </task>
     <servers />
   </component>
@@ -78,22 +240,35 @@
     <option name="version" value="2" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1348" height="236" key="GridCell.Tab.0.bottom" timestamp="1592786212627">
+    <state x="193" y="144" width="1152" height="690" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1592806767233">
       <screen x="0" y="23" width="1680" height="954" />
     </state>
-    <state width="1348" height="236" key="GridCell.Tab.0.bottom/-2480.-1417.3440.1417/0.23.1680.954@0.23.1680.954" timestamp="1592786212627" />
-    <state width="1348" height="236" key="GridCell.Tab.0.center" timestamp="1592786212626">
+    <state x="193" y="144" width="1152" height="690" key="#com.intellij.execution.impl.EditConfigurationsDialog/-1208.-1417.3440.1417/0.23.1680.954@0.23.1680.954" timestamp="1592806767233" />
+    <state x="193" y="144" width="1152" height="690" key="#com.intellij.execution.impl.EditConfigurationsDialog/-2480.-1417.3440.1417/0.23.1680.954@0.23.1680.954" timestamp="1592786754898" />
+    <state width="1348" height="236" key="GridCell.Tab.0.bottom" timestamp="1592806671817">
       <screen x="0" y="23" width="1680" height="954" />
     </state>
-    <state width="1348" height="236" key="GridCell.Tab.0.center/-2480.-1417.3440.1417/0.23.1680.954@0.23.1680.954" timestamp="1592786212626" />
-    <state width="1348" height="236" key="GridCell.Tab.0.left" timestamp="1592786212626">
+    <state width="1348" height="236" key="GridCell.Tab.0.bottom/-1208.-1417.3440.1417/0.23.1680.954@0.23.1680.954" timestamp="1592806671817" />
+    <state width="1348" height="236" key="GridCell.Tab.0.bottom/-2480.-1417.3440.1417/0.23.1680.954@0.23.1680.954" timestamp="1592787055321" />
+    <state width="1348" height="236" key="GridCell.Tab.0.center" timestamp="1592806671816">
       <screen x="0" y="23" width="1680" height="954" />
     </state>
-    <state width="1348" height="236" key="GridCell.Tab.0.left/-2480.-1417.3440.1417/0.23.1680.954@0.23.1680.954" timestamp="1592786212626" />
-    <state width="1348" height="236" key="GridCell.Tab.0.right" timestamp="1592786212627">
+    <state width="1348" height="236" key="GridCell.Tab.0.center/-1208.-1417.3440.1417/0.23.1680.954@0.23.1680.954" timestamp="1592806671816" />
+    <state width="1348" height="236" key="GridCell.Tab.0.center/-2480.-1417.3440.1417/0.23.1680.954@0.23.1680.954" timestamp="1592787055319" />
+    <state width="1348" height="236" key="GridCell.Tab.0.left" timestamp="1592806671815">
       <screen x="0" y="23" width="1680" height="954" />
     </state>
-    <state width="1348" height="236" key="GridCell.Tab.0.right/-2480.-1417.3440.1417/0.23.1680.954@0.23.1680.954" timestamp="1592786212627" />
+    <state width="1348" height="236" key="GridCell.Tab.0.left/-1208.-1417.3440.1417/0.23.1680.954@0.23.1680.954" timestamp="1592806671815" />
+    <state width="1348" height="236" key="GridCell.Tab.0.left/-2480.-1417.3440.1417/0.23.1680.954@0.23.1680.954" timestamp="1592787055318" />
+    <state width="1348" height="236" key="GridCell.Tab.0.right" timestamp="1592806671816">
+      <screen x="0" y="23" width="1680" height="954" />
+    </state>
+    <state width="1348" height="236" key="GridCell.Tab.0.right/-1208.-1417.3440.1417/0.23.1680.954@0.23.1680.954" timestamp="1592806671816" />
+    <state width="1348" height="236" key="GridCell.Tab.0.right/-2480.-1417.3440.1417/0.23.1680.954@0.23.1680.954" timestamp="1592787055320" />
+    <state x="243" y="23" key="SettingsEditor" timestamp="1592806923094">
+      <screen x="0" y="23" width="1680" height="954" />
+    </state>
+    <state x="243" y="23" key="SettingsEditor/-1208.-1417.3440.1417/0.23.1680.954@0.23.1680.954" timestamp="1592806923094" />
     <state x="0" y="76" key="new project wizard" timestamp="1592785617957">
       <screen x="0" y="23" width="1680" height="954" />
     </state>

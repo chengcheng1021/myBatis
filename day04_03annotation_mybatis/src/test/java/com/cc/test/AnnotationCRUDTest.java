@@ -12,6 +12,7 @@ import org.junit.Test;
 
 import java.io.IOException;
 import java.io.InputStream;
+import java.util.Date;
 
 public class AnnotationCRUDTest {
 
@@ -42,5 +43,17 @@ public class AnnotationCRUDTest {
         user.setAddress("南京市鼓楼区");
 
         userDao.saveUser(user);
+    }
+
+    @Test
+    public void testUpdate() {
+        User user = new User();
+        user.setId(56);
+        user.setUsername("mybatis annotation");
+        user.setAddress("南京市鼓楼区");
+        user.setSex("男");
+        user.setBirthday(new Date());
+
+        userDao.updateUser(user);
     }
 }

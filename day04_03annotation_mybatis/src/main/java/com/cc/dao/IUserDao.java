@@ -3,6 +3,7 @@ package com.cc.dao;
 import com.cc.domain.User;
 import org.apache.ibatis.annotations.Insert;
 import org.apache.ibatis.annotations.Select;
+import org.apache.ibatis.annotations.Update;
 
 import java.util.List;
 
@@ -28,4 +29,11 @@ public interface IUserDao {
      */
     @Insert("insert into user(username, address, sex, birthday) values(#{username}, #{address}, #{sex}, #{birthday})")
     void saveUser(User user);
+
+    /**
+     * 更新用户
+     * @param user
+     */
+    @Update("update user set username=#{username}, sex=#{sex}, birthday=#{birthday}, address=#{address} where id=#{id}")
+    void updateUser(User user);
 }

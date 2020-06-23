@@ -1,6 +1,7 @@
 package com.cc.dao;
 
 import com.cc.domain.User;
+import org.apache.ibatis.annotations.Delete;
 import org.apache.ibatis.annotations.Insert;
 import org.apache.ibatis.annotations.Select;
 import org.apache.ibatis.annotations.Update;
@@ -36,4 +37,19 @@ public interface IUserDao {
      */
     @Update("update user set username=#{username}, sex=#{sex}, birthday=#{birthday}, address=#{address} where id=#{id}")
     void updateUser(User user);
+
+    /**
+     * 删除用户
+     * @param userId
+     */
+    @Delete("delete from user where id=#{id}")
+    void deleteUser(Integer userId);
+
+    /**
+     * 根据 id 查询用户
+     * @param userId
+     * @return
+     */
+    @Select("select * from user where id=#{id}")
+    User findById(Integer userId);
 }

@@ -56,4 +56,15 @@ public class AnnotationCRUDTest {
 
         userDao.updateUser(user);
     }
+
+    @Test
+    public void testDelete() {
+        userDao.deleteUser(56);
+    }
+
+    @Test
+    public void testFindOne() {
+        User user = userDao.findById(55);
+        System.out.println(user);
+    }
 }

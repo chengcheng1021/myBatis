@@ -52,4 +52,20 @@ public interface IUserDao {
      */
     @Select("select * from user where id=#{id}")
     User findById(Integer userId);
+
+    /**
+     * 根据用户模糊查询
+     * @param username
+     * @return
+     */
+//    @Select("select * from user where username like #{username}")
+    @Select("select * from user where username like '%${value}%'")
+    List<User> findUserByName(String username);
+
+    /**
+     * 查询总用户数量
+     * @return
+     */
+    @Select("select count(id) from user")
+    int findTotalUser();
 }

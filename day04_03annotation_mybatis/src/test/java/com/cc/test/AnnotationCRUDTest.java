@@ -13,6 +13,7 @@ import org.junit.Test;
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.Date;
+import java.util.List;
 
 public class AnnotationCRUDTest {
 
@@ -66,5 +67,20 @@ public class AnnotationCRUDTest {
     public void testFindOne() {
         User user = userDao.findById(55);
         System.out.println(user);
+    }
+
+    @Test
+    public void testFindUserByName() {
+//        List<User> users = userDao.findUserByName("%王%");
+        List<User> users = userDao.findUserByName("王");
+        for (User user : users) {
+            System.out.println(user);
+        }
+    }
+
+    @Test
+    public void testFindTotal() {
+        int total = userDao.findTotalUser();
+        System.out.println(total);
     }
 }

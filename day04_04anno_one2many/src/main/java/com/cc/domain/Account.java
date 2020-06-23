@@ -6,6 +6,17 @@ public class Account {
     private Integer uid;
     private Double money;
 
+    //多对一（mybatis 中称之为一对一）的映射，一个账户只能属于一个用户
+    private User user;
+
+    public User getUser() {
+        return user;
+    }
+
+    public void setUser(User user) {
+        this.user = user;
+    }
+
     public Integer getId() {
         return id;
     }

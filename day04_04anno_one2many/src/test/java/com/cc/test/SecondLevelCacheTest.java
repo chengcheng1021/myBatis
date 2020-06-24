@@ -36,6 +36,7 @@ public class SecondLevelCacheTest {
     public void destory() throws IOException {
 //        session.commit();
 //        session.close();
+
         is.close();
     }
 

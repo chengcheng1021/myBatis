@@ -2,6 +2,7 @@ package com.cc.test;
 
 import com.cc.dao.IUserDao;
 import com.cc.domain.User;
+import org.apache.ibatis.annotations.CacheNamespace;
 import org.apache.ibatis.io.Resources;
 import org.apache.ibatis.session.SqlSession;
 import org.apache.ibatis.session.SqlSessionFactory;
@@ -15,7 +16,8 @@ import java.io.InputStream;
 import java.util.Date;
 import java.util.List;
 
-public class UserTest {
+@CacheNamespace(blocking = true)
+public class SecondLevelCacheTest {
 
     private InputStream is;
     private SqlSessionFactory factory;
@@ -32,37 +34,21 @@ public class UserTest {
 
     @After
     public void destory() throws IOException {
-        session.commit();
-        session.close();
+//        session.commit();
+//        session.close();
         is.close();
-    }
-
-    @Test
-    public void testFindAll() {
-        List<User> users = userDao.findAll();
-        for (User user : users) {
-            System.out.println("------每个用户的信息------");
-            System.out.println(user);
-            System.out.println(user.getAccounts());
-        }
     }
 
     @Test
     public void testFindOne() {
         User user1 = userDao.findById(55);
         System.out.println(user1);
+        session.close();//释放一级缓存
 
-        User user2 = userDao.findById(55);
+        SqlSession session1 = factory.openSession();
+        IUserDao userDao1 = session1.getMapper(IUserDao.class);
+        User user2 = userDao1.findById(55);
         System.out.println(user2);
-
-        System.out.println(user1 == user2);
-    }
-
-    @Test
-    public void testFindUserByName() {
-        List<User> users = userDao.findUserByName("%王%");
-        for (User user : users) {
-            System.out.println(user);
-        }
+        session1.close();
     }
 }

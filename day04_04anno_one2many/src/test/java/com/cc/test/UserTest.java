@@ -15,7 +15,7 @@ import java.io.InputStream;
 import java.util.Date;
 import java.util.List;
 
-public class AnnotationCRUDTest {
+public class UserTest {
 
     private InputStream is;
     private SqlSessionFactory factory;
@@ -41,7 +41,9 @@ public class AnnotationCRUDTest {
     public void testFindAll() {
         List<User> users = userDao.findAll();
         for (User user : users) {
+            System.out.println("------每个用户的信息------");
             System.out.println(user);
+            System.out.println(user.getAccounts());
         }
     }
 

@@ -2,6 +2,7 @@ package com.cc.dao;
 
 import com.cc.domain.User;
 import org.apache.ibatis.annotations.*;
+import org.apache.ibatis.mapping.FetchType;
 
 import java.util.List;
 
@@ -25,6 +26,7 @@ public interface IUserDao {
             @Result(column = "address", property = "userAddress"),
             @Result(column = "sex", property = "userSex"),
             @Result(column = "birthday", property = "userBirthday"),
+            @Result(property = "accounts", column = "id", many = @Many(select = "com.cc.dao.IAccountDao.findAccountByUid", fetchType = FetchType.LAZY)),
     })
     List<User> findAll();
 

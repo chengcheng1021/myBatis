@@ -23,4 +23,12 @@ public interface IAccountDao {
             @Result(property = "user", column = "uid", one = @One(select = "com.cc.dao.IUserDao.findById", fetchType = FetchType.EAGER))
     })
     List<Account> findAll();
+
+    /**
+     * 根据用户ID查询账户信息
+     * @param userId
+     * @return
+     */
+    @Select("select * from account where uid = #{userId}")
+    List<Account> findAccountByUid(Integer userId);
 }

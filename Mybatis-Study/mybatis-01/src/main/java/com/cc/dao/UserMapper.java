@@ -3,6 +3,7 @@ package com.cc.dao;
 import com.cc.pojo.User;
 
 import java.util.List;
+import java.util.Map;
 
 public interface UserMapper {
 
@@ -39,4 +40,11 @@ public interface UserMapper {
      * @return
      */
     int deleteUser(int id);
+
+    /**
+     * 插入一个用户
+     * @param map
+     * @return
+     */
+    int addUser2(Map<String, Object> map);
 }

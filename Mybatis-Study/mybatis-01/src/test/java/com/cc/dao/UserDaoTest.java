@@ -5,7 +5,9 @@ import com.cc.utils.MybatisUtils;
 import org.apache.ibatis.session.SqlSession;
 import org.junit.Test;
 
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 public class UserDaoTest {
 
@@ -102,6 +104,32 @@ public class UserDaoTest {
         System.out.println(res);
         if (res > 0) {
             System.out.println("删除成功");
+        }
+
+        //提交事务
+        sqlSession.commit();
+
+        //关闭 sqlSession
+        sqlSession.close();
+    }
+
+    @Test
+    public void addUser2() {
+        //第一步：获取 sqlSession 对象
+        SqlSession sqlSession = MybatisUtils.getSqlSession();
+
+        //第二步：执行SQL
+        //方式一：getMapper
+        UserMapper userMapper = sqlSession.getMapper(UserMapper.class);
+
+        HashMap<String, Object> hashMap = new HashMap<String, Object>();
+        hashMap.put("userid", 5);
+        hashMap.put("userName", "cccc");
+        hashMap.put("password", "12313131");
+
+        int res = userMapper.addUser2(hashMap);
+        if (res > 0) {
+            System.out.println("插入成功");
         }
 
         //提交事务

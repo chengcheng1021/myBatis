@@ -27,4 +27,9 @@
         delete from mybatis.user where id=#{id}
     </delete>
 
+    <!-- 模糊查询拓展 -->
+    <insert id="addUser2" parameterType="map">
+        insert into mybatis.user(id,username,pwd) values (#{userid}, #{userName}, #{password})
+    </insert>
+
 </mapper>

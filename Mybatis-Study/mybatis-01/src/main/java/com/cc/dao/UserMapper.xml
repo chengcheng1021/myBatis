@@ -4,10 +4,27 @@
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
 <!-- namespace 绑定一个对应的Dao/Mapper接口 -->
-<mapper namespace="com.cc.dao.UserDao">
+<mapper namespace="com.cc.dao.UserMapper">
 
     <select id="getUserList" resultType="com.cc.pojo.User">
         select * from mybatis.user
     </select>
+
+    <select id="getUserById" parameterType="int" resultType="com.cc.pojo.User">
+        select * from mybatis.user where id = #{id}
+    </select>
+
+    <!-- 对象中属性可以直接取出来 -->
+    <insert id="addUser" parameterType="com.cc.pojo.User">
+        insert into mybatis.user(id,username,pwd) values (#{id}, #{username}, #{pwd})
+    </insert>
+
+    <update id="updateUser" parameterType="com.cc.pojo.User">
+        update mybatis.user set username=#{username},pwd=#{pwd} where id=#{id}
+    </update>
+
+    <delete id="deleteUser" parameterType="int">
+        delete from mybatis.user where id=#{id}
+    </delete>
 
 </mapper>

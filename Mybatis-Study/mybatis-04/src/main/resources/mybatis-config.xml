@@ -10,15 +10,15 @@
     <properties resource="db.properties"/>
 
     <settings>
-        <setting name="logImpl" value="STDOUT_LOGGING"/>
+        <setting name="logImpl" value="LOG4J"/>
     </settings>
 
     <!-- 给实体类取别名 -->
     <typeAliases>
         <!-- 方式一 -->
-<!--        <typeAlias type="com.cc.pojo.User" alias="User"/>-->
+        <typeAlias type="com.cc.pojo.User" alias="User"/>
         <!-- 方式二 -->
-        <package name="com.cc.pojo"/>
+<!--        <package name="com.cc.pojo"/>-->
     </typeAliases>
 
 

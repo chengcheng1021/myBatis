@@ -3,9 +3,13 @@ package com.cc.dao;
 import com.cc.pojo.User;
 import com.cc.utils.MybatisUtils;
 import org.apache.ibatis.session.SqlSession;
+import org.apache.log4j.Logger;
 import org.junit.Test;
 
+
 public class UserDaoTest {
+
+    static Logger logger = Logger.getLogger(UserDaoTest.class);
 
     @Test
     public void test() {
@@ -24,5 +28,13 @@ public class UserDaoTest {
 
         //关闭 sqlSession
         sqlSession.close();
+    }
+
+    @Test
+    public void testLog4j() {
+        logger.info("info:进入了testLog4j方法");
+        logger.info("debug:进入了testLog4j方法");
+        logger.info("error:进入了testLog4j方法");
+
     }
 }

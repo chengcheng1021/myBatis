@@ -41,7 +41,24 @@
 
     <!-- 每个 Mapper.XML 都需要在Mybatis核心配置文件中注册！ -->
     <mappers>
-        <mapper resource="com/cc/dao/UserMapper.xml"/>
+        <!--
+        方式一：resource 方式
+        -->
+<!--        <mapper resource="com/cc/dao/UserMapper.xml"/>-->
+
+        <!--
+        方式二：class 方式
+            接口和他的 Mapper 配置文件必须同名
+            接口和他的 Mapper 配置文件必须在同一个包下
+        -->
+<!--        <mapper class="com.cc.dao.UserMapper"/>-->
+
+        <!--
+        方式san：package 方式
+            接口和他的 Mapper 配置文件必须同名
+            接口和他的 Mapper 配置文件必须在同一个包下
+        -->
+        <package name="com.cc.dao"/>
     </mappers>
 
 </configuration>

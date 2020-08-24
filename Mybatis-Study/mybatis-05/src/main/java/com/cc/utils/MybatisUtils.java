@@ -27,6 +27,6 @@ public class MybatisUtils {
     //有了SqlSessionFactory，就可以获取 SqlSession 的实例了
     //SqlSession 包含了面向数据库执行 sql 命令所需的全部方法
     public static SqlSession getSqlSession() {
-        return sqlSessionFactory.openSession();
+        return sqlSessionFactory.openSession(true);
     }
 }

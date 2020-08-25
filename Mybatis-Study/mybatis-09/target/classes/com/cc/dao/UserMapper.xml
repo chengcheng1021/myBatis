@@ -6,6 +6,9 @@
 <!-- 核心配置文件 -->
 <mapper namespace="com.cc.dao.UserMapper">
 
+<!--    <cache eviction="FIFO" flushInterval="60000" size="512" readOnly="true"/>-->
+    <cache/>
+
     <select id="queryUserById" resultType="User">
         select * from user where id = #{id}
     </select>

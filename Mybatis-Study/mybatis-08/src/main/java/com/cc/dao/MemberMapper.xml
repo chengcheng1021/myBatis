@@ -10,15 +10,19 @@
         insert into member(id,nickname,phoneNum,email) values (#{id},#{nickname},#{phoneNum},#{email})
     </insert>
 
+    <sql id="if-nickname-email">
+        <if test="nickname != null">
+            nickname = #{nickname}
+        </if>
+        <if test="email != null">
+            and email = #{email}
+        </if>
+    </sql>
+
     <select id="queryMemberIF" parameterType="map" resultType="Member">
         select * from member
         <where>
-            <if test="nickname != null">
-                nickname = #{nickname}
-            </if>
-            <if test="email != null">
-                and email = #{email}
-            </if>
+            <include refid="if-nickname-email"></include>
         </where>
     </select>
 
@@ -36,6 +40,15 @@
                     and id = #{id}
                 </otherwise>
             </choose>
+        </where>
+    </select>
+
+    <select id="queryMemberForeach" parameterType="map" resultType="Member">
+        select * from member
+        <where>
+            <foreach collection="ids" item="id" open="and (" close=")" separator="or">
+                mid = #{id}
+            </foreach>
         </where>
     </select>
 

@@ -28,4 +28,11 @@ public interface MemberMapper {
      */
     List<Member> queryMemberChoose(Map map);
 
+    /**
+     * 根据id查询
+     * @param map
+     * @return
+     */
+    List<Member> queryMemberForeach(Map map);
+
 }

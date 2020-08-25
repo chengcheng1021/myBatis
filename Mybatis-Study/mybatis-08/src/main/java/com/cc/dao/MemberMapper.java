@@ -20,4 +20,12 @@ public interface MemberMapper {
      * @return
      */
     List<Member> queryMemberIF(Map map);
+
+    /**
+     * choose(when otherwise) 查询
+     * @param map
+     * @return
+     */
+    List<Member> queryMemberChoose(Map map);
+
 }

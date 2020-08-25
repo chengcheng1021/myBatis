@@ -34,7 +34,22 @@ public class UserDaoTest {
         MemberMapper mapper = sqlSession.getMapper(MemberMapper.class);
         Map<String, Object> map = new HashMap<String, Object>();
         //map.put("nickname","小三");
+        map.put("email","492245711@qq.com");
         List<Member> members = mapper.queryMemberIF(map);
+        for (Member member : members) {
+            System.out.println(member);
+        }
+        sqlSession.close();
+    }
+
+    @Test
+    public void test3() {
+        SqlSession sqlSession = MybatisUtils.getSqlSession();
+        MemberMapper mapper = sqlSession.getMapper(MemberMapper.class);
+        Map<String, Object> map = new HashMap<String, Object>();
+        map.put("nickname","小三");
+        map.put("email","492245711@qq.com");//没有效果，只能满足其中之一
+        List<Member> members = mapper.queryMemberChoose(map);
         for (Member member : members) {
             System.out.println(member);
         }

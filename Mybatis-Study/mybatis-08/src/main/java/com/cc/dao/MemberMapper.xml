@@ -11,13 +11,32 @@
     </insert>
 
     <select id="queryMemberIF" parameterType="map" resultType="Member">
-        select * from member where 1=1
-        <if test="nickname != null">
-            and nickname = #{nickname}
-        </if>
-        <if test="email != null">
-            and email = #{email}
-        </if>
+        select * from member
+        <where>
+            <if test="nickname != null">
+                nickname = #{nickname}
+            </if>
+            <if test="email != null">
+                and email = #{email}
+            </if>
+        </where>
+    </select>
+
+    <select id="queryMemberChoose" parameterType="map" resultType="Member">
+        select * from member
+        <where>
+            <choose>
+                <when test="nickname != null">
+                    nickname = #{nickname}
+                </when>
+                <when test="email != null">
+                    and email = #{email}
+                </when>
+                <otherwise>
+                    and id = #{id}
+                </otherwise>
+            </choose>
+        </where>
     </select>
 
 </mapper>

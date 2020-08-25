@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<!-- 核心配置文件 -->
+<mapper namespace="com.cc.dao.UserMapper">
+    
+    <select id="getUsers" resultType="User">
+        select * from user
+    </select>
+
+    <select id="getUsers2" resultMap="UserAccount">
+        select u.id,u.username,a.MONEY,a.ID as aid
+        from user u,account a
+        where a.UID = u.id and u.id=#{uid}
+    </select>
+    <resultMap id="UserAccount" type="User">
+        <id property="id" column="id"/>
+        <result property="username" column="username"/>
+        <collection property="accounts" ofType="Account">
+            <id property="ID" column="aid"/>
+            <result property="MONEY" column="MONEY"/>
+        </collection>
+    </resultMap>
+
+
+<!--    ==================================================-->
+    
+    <select id="getUsers3" resultMap="UserAccount2">
+        select * from user where id = #{uid}
+    </select>
+    <resultMap id="UserAccount2" type="User">
+        <collection property="accounts" javaType="ArrayList" ofType="User" select="getAccountByUserId" column="id"/>
+    </resultMap>
+    <select id="getAccountByUserId" resultType="Account">
+        select * from account where UID = #{uid}
+    </select>
+
+</mapper>

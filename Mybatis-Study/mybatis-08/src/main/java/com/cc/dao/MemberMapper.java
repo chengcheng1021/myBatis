@@ -2,6 +2,9 @@ package com.cc.dao;
 
 import com.cc.pojo.Member;
 
+import java.util.List;
+import java.util.Map;
+
 public interface MemberMapper {
 
     /**
@@ -10,4 +13,11 @@ public interface MemberMapper {
      * @return
      */
     int addMember(Member member);
+
+    /**
+     * 模糊查询
+     * @param map
+     * @return
+     */
+    List<Member> queryMemberIF(Map map);
 }

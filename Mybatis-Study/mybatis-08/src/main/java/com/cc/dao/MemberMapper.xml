@@ -10,4 +10,14 @@
         insert into member(id,nickname,phoneNum,email) values (#{id},#{nickname},#{phoneNum},#{email})
     </insert>
 
+    <select id="queryMemberIF" parameterType="map" resultType="Member">
+        select * from member where 1=1
+        <if test="nickname != null">
+            and nickname = #{nickname}
+        </if>
+        <if test="email != null">
+            and email = #{email}
+        </if>
+    </select>
+
 </mapper>

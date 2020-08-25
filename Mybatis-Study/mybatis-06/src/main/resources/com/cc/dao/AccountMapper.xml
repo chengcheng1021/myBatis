@@ -6,5 +6,47 @@
 <!-- 核心配置文件 -->
 <mapper namespace="com.cc.dao.AccountMapper">
 
+<!--    按照结果集嵌套查询-->
+    
+    <select id="getAccounts2" resultMap="AccountUser2">
+        select a.UID,a.MONEY,u.username as uname from account a,user u where a.UID = u.id
+    </select>
+    
+    <resultMap id="AccountUser2" type="Account">
+        <id property="ID" column="ID"/>
+        <result property="MONEY" column="MONEY"/>
+        <association property="USER" column="UID" javaType="User">
+            <result property="username" column="uname"/>
+        </association>
+    </resultMap>
+
+
+
+
+
+<!--    ======================================================================================-->
+
+<!--    思路：-->
+<!--        1、查询所有的账户信息-->
+<!--        2、根据查询出来的账户的UID，寻找相应的用户，子查询-->
+
+    <select id="getAccounts" resultMap="AccountUser">
+        select * from account a,user u where a.UID = u.id
+    </select>
+    
+    <resultMap id="AccountUser" type="Account">
+        <id property="ID" column="ID"/>
+        <result property="MONEY" column="MONEY"/>
+        <!--
+        复杂属性需要单独处理
+            对象：association
+            集合：collection
+         -->
+        <association property="USER" column="UID" javaType="User" select="getUser"/>
+    </resultMap>
+    
+    <select id="getUser" resultType="User">
+        select * from user where id = #{id}
+    </select>
 
 </mapper>

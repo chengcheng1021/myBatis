@@ -35,5 +35,6 @@
 
     <mappers>
         <mapper class="com.cc.dao.AccountMapper"/>
+        <mapper class="com.cc.dao.UserMapper"/>
     </mappers>
 </configuration>
